@@ -882,7 +882,74 @@ the 0.0.0.0 means run on any origin or any ip address
 Now all we have to do is add this all to github
 
 so in the terminal django-react-with-tim => git init
+then git add .
+then git status
+then git commit -m "first commit"
 
+then to change the branch from master to main
+git branch -M main
+
+next i think we push it to github
+create a new repo from your github account we named it django-react-fullstack
+then below look for this git remote add origin https://github.com/Yorgi88/django-react-fullstack.git
+
+then ypu PUSH => git push -u origin main
+
+so in your github, refresh the page and you should see the project in its full glory all the env files gone
+
+now lets move to DEPLOYMENT so in the choreo main page, go to the overview tab and click on create project
+we gonna call it Django-React-Fullstack
+then select service, which will be for our rest API
+you'd see component name, just enter backend
+select python as your build pack
+
+then connect your repo(github) with the choreo , search for the directory django-react-fullstack in your repo
+then the repo is found
+
+then select the backend dir then click next, then select the python 3.10 version
+
+then click create
+
+
+Now lets create the frontend service this time , instead of service, we'll select web application
+in the very tab of where you created the backend project, which is Django-React-Fullstack
+look for a create button and start selecting web app since we used react to build our frontend
+
+then again link your choreo with github and select your repo which is django-react-fullstack
+
+
+then in the project directory tab, select the frontend dir
+
+in the build command tab write => npm install && npm run build
+
+for the build path tab, write  => /dist
+
+for the node version write 18.17
+
+then click create
+
+
+next we want to build each of the components(backend, frontend) and then deploy
+
+now on the top click on the Django-React-Fullstack then click on the backend
+
+then on the left side pane click the build tab
+
+then click on build latest then wait
+
+then in the left side of the pane click deploy
+then click configure and deploy
+
+then on the right side we need to add some env configs
+
+value => 3333
+name => AkinmadeMoses454
+
+we skipped the rest and a deploy button appears
+
+so deploy then find the endpoint configurations
+
+ERROR i'm not sure how to do this at all!
 
 
 
